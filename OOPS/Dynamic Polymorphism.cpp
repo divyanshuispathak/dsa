@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 // without virtual early binding, static binding
 // with virtual late binding, dynamic binding
@@ -9,7 +10,7 @@ public:
     // virtual
     void makeSound()
     {
-        std::cout << "Animal makes a sound" << std::endl;
+        cout << "Animal makes a sound" << endl;
     }
 };
 
@@ -18,7 +19,7 @@ class Dog : public Animal
 public:
     void makeSound()
     {
-        std::cout << "Dog barks" << std::endl;
+        cout << "Dog barks" << endl;
     }
 };
 
@@ -27,7 +28,7 @@ class Cat : public Animal
 public:
     void makeSound()
     {
-        std::cout << "Cat meows" << std::endl;
+        cout << "Cat meows" << endl;
     }
 };
 
